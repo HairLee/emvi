@@ -10,8 +10,8 @@ import retrofit2.http.Url
  */
 interface UsersService {
 
-    @GET
-    fun fetchUsers(@Url url: String): Observable<UserResponse>
+    @GET("?results=10&nat=en")
+    fun fetchUsers(): Observable<UserResponse>
 
     @GET
     fun fetchTeacher(@Url url: String): Observable<UserResponse>

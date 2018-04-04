@@ -51,7 +51,7 @@ class UserViewModel(pContext: Context) : Observable() {
         val appController = AppController.create(this.context!!)
         val usersService = appController.userService
 
-        val disposable = usersService!!.fetchUsers(RANDOM_USER_URL)
+        val disposable = usersService!!.fetchUsers()
                 .subscribeOn(appController.subscribeScheduler())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({ userResponse  ->

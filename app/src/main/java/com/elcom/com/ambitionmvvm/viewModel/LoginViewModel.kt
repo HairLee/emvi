@@ -12,15 +12,12 @@ import io.reactivex.android.schedulers.AndroidSchedulers
  */
 class LoginViewModel(pContext: Context) : BaseViewModel(pContext) {
 
-
-
-
      fun fetchUsersList() {
 
         val appController = AppController.create(this.mContext!!)
         val usersService = appController.userService
 
-        val disposable = usersService!!.fetchUsers(Constant.RANDOM_USER_URL)
+        val disposable = usersService!!.fetchUsers()
                 .subscribeOn(appController.subscribeScheduler())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({ userResponse  ->
