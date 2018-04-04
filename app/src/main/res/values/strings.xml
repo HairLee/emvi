@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AmbitionMVVM</string>
+    <string name="default_message_loading_users">1</string>
+    <string name="error_message_loading_users">Get Error</string>
+</resources>
