@@ -6,7 +6,7 @@ import android.databinding.ObservableInt
 import android.view.View
 import com.elcom.com.ambitionmvvm.AppController
 import com.elcom.com.ambitionmvvm.R
-import com.elcom.com.ambitionmvvm.Utils.Constant.Companion.RANDOM_USER_URL
+import com.elcom.com.ambitionmvvm.utils.Constant.Companion.RANDOM_USER_URL
 import com.elcom.com.ambitionmvvm.model.User
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable

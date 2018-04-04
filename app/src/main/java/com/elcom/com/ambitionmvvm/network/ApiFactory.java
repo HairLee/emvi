@@ -1,6 +1,6 @@
 package com.elcom.com.ambitionmvvm.network;
 
-import com.elcom.com.ambitionmvvm.Utils.Constant;
+import com.elcom.com.ambitionmvvm.utils.Constant;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 import retrofit2.Retrofit;

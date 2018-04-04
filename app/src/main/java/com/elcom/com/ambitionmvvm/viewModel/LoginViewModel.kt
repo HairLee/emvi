@@ -3,11 +3,9 @@ package com.elcom.com.ambitionmvvm.viewModel
 import android.content.Context
 import android.view.View
 import com.elcom.com.ambitionmvvm.AppController
-import com.elcom.com.ambitionmvvm.R
-import com.elcom.com.ambitionmvvm.Utils.Constant
+import com.elcom.com.ambitionmvvm.utils.Constant
 import com.elcom.com.ambitionmvvm.model.User
 import io.reactivex.android.schedulers.AndroidSchedulers
-import java.util.*
 
 /**
  * Created by Hailpt on 4/4/2018.

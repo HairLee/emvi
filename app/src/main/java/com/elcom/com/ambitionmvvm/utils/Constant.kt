@@ -1,4 +1,4 @@
-package com.elcom.com.ambitionmvvm.Utils
+package com.elcom.com.ambitionmvvm.utils
 
 /**
  * Created by Hailpt on 4/3/2018.

@@ -1,20 +1,14 @@
 package com.elcom.com.ambitionmvvm.view.activity
 
-import android.content.Intent
 import android.databinding.DataBindingUtil
-import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.view.Menu
-import android.view.MenuItem
 import com.elcom.com.ambitionmvvm.R
-import com.elcom.com.ambitionmvvm.Utils.Constant
 import com.elcom.com.ambitionmvvm.databinding.ActivityMainBinding
 import com.elcom.com.ambitionmvvm.view.adapter.UserAdapter
 import com.elcom.com.ambitionmvvm.viewModel.UserViewModel
-import kotlinx.android.synthetic.main.activity_main.*
 
 import java.util.Observable
 import java.util.Observer
