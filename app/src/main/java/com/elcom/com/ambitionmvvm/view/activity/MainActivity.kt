@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView
 import com.elcom.com.ambitionmvvm.R
 import com.elcom.com.ambitionmvvm.databinding.ActivityMainBinding
 import com.elcom.com.ambitionmvvm.view.adapter.UserAdapter
-import com.elcom.com.ambitionmvvm.viewModel.UserViewModel
+import com.elcom.com.ambitionmvvm.viewModel.Main.UserViewModel
 
 import java.util.Observable
 import java.util.Observer
@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity(), Observer {
         initDataBinding()
         setUpListOfUsersView(userActivityBinding!!.listUser)
         setUpObserver(userViewModel!!)
-
     }
 
     private fun initDataBinding() {

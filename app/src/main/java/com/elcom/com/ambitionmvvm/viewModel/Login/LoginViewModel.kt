@@ -1,10 +1,10 @@
-package com.elcom.com.ambitionmvvm.viewModel
+package com.elcom.com.ambitionmvvm.viewModel.Login
 
 import android.content.Context
 import android.view.View
 import com.elcom.com.ambitionmvvm.AppController
-import com.elcom.com.ambitionmvvm.utils.Constant
 import com.elcom.com.ambitionmvvm.model.User
+import com.elcom.com.ambitionmvvm.viewModel.BaseViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 
 /**

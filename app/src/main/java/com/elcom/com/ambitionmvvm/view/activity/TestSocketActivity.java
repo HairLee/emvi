@@ -13,6 +13,7 @@ import com.github.nkzawa.emitter.Emitter;
 import com.github.nkzawa.socketio.client.IO;
 import com.github.nkzawa.socketio.client.Socket;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.URISyntaxException;
@@ -46,32 +47,56 @@ public class TestSocketActivity extends AppCompatActivity {
         });
 
         mSocket.connect();
-        mSocket.on("connect", onNewMessage);
-        mSocket.on("new message", onNewMessage);
+//        mSocket.on("connect", onNewMessage);
+        mSocket.on("notify everyone", onNewMessage);
     }
 
     private void attemptSend() {
-        String message = "Le Thanh Hai send message !";
-        if (message.isEmpty()) {
-            return;
+
+        JSONObject student1 = new JSONObject();
+        try {
+            student1.put("comment", "Hailpt sends message");
+            student1.put("user", "123");
+
+        } catch (JSONException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
 
-        mSocket.emit("new message", message);
+        mSocket.emit("comment added", student1);
     }
 
     private Emitter.Listener onNewMessage = new Emitter.Listener() {
 
         @Override
-        public void call(Object... args) {
-            Log.e("TestSocketActivity", " mSocket "+args.toString());
+        public void call(final Object... args) {
+
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    JSONObject data = (JSONObject) args[0];
+
+
+
+                    String username = "HIHI";
+                    String message;
+                    try {
+                        username = data.getString("comment");
+                        message = data.getString("user");
+                    } catch (JSONException e) {
+                        return;
+                    }
+
+                    Log.e("TestSocketActivity", " mSocket "+username);
+                }
+            });
         }
     };
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-
         mSocket.disconnect();
-        mSocket.off("new message", onNewMessage);
+        mSocket.off("notify everyone", onNewMessage);
     }
 }

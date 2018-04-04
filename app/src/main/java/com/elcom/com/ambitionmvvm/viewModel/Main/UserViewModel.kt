@@ -1,4 +1,4 @@
-package com.elcom.com.ambitionmvvm.viewModel
+package com.elcom.com.ambitionmvvm.viewModel.Main
 
 import android.content.Context
 import android.databinding.ObservableField

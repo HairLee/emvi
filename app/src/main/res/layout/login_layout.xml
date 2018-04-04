@@ -20,7 +20,7 @@
         <variable name="isLoading" type="boolean"/>
 
         <variable name="LoginViewModel"
-                  type="com.elcom.com.ambitionmvvm.viewModel.LoginViewModel"/>
+                  type="com.elcom.com.ambitionmvvm.viewModel.Login.LoginViewModel"/>
     </data>
     <FrameLayout
         xmlns:android="http://schemas.android.com/apk/res/android"

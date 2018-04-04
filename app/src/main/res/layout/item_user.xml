@@ -8,7 +8,7 @@
 
     <variable
         name="userViewModel"
-        type="com.elcom.com.ambitionmvvm.viewModel.ItemUserViewModel"/>
+        type="com.elcom.com.ambitionmvvm.viewModel.Main.ItemUserViewModel"/>
   </data>
 
 

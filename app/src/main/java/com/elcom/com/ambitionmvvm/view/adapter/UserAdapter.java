@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import com.elcom.com.ambitionmvvm.R;
 import com.elcom.com.ambitionmvvm.databinding.ItemUserBinding;
 import com.elcom.com.ambitionmvvm.model.User;
-import com.elcom.com.ambitionmvvm.viewModel.ItemUserViewModel;
+import com.elcom.com.ambitionmvvm.viewModel.Main.ItemUserViewModel;
 
 import java.util.Collections;
 import java.util.List;
